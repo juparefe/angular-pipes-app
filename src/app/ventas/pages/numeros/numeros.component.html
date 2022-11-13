@@ -1,0 +1,25 @@
+<div class="text-layout">
+    <h1>DecimalPipe y Porcentaje</h1>
+    <p>Pipes incluidos en Angular - Usualmente en el CommonModule</p>
+    
+</div>
+
+<div class="col">
+    <p-card>
+        <h3>Datos antes del Pipe: </h3>
+        <h4>Numero: {{ventasNetas}}</h4>
+        <h4>Porcentaje: {{porcentaje}}</h4>
+    </p-card>
+</div>
+
+<div class="grid">
+    <div class="col">
+        <p-card header="Ventas Netas" subheader="DecimalPipe + Icono de PrimeNg"><b>Dato despues del Pipe: </b> <i><div class="pi pi-dollar"></div></i> {{ventasNetas | number:'1.2-2'}}</p-card>
+    </div>
+    <div class="col">
+        <p-card header="Ventas Brutas" subheader="CurrencyPipe"><b>Dato despues del Pipe:</b> {{ventasNetas | currency:'CAD':'symbol-narrow':'1.0-4'}}</p-card>
+    </div>
+    <div class="col">
+        <p-card header="Ganancia porcentual" subheader="PercentPipe"><b>Dato despues del Pipe:</b> {{porcentaje | percent:'2.2-2'}}</p-card>
+    </div>
+</div>

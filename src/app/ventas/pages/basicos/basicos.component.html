@@ -1,0 +1,63 @@
+<div class="text-layout">
+    <h1>Pipes Basicos</h1>
+    <p>Pipes incluidos en Angular - Usualmente en el CommonModule</p>
+    
+</div>
+
+<div class="col">
+    <p-card><h3>Dato antes del Pipe: {{nombre}}</h3></p-card>
+</div>
+
+<div class="grid">
+    <div class="col">
+        <p-card header="Uppercase"><b>Dato despues del Pipe:</b> {{nombre | uppercase}}</p-card>
+    </div>
+    <div class="col">
+        <p-card header="Lowercase"><b>Dato despues del Pipe:</b> {{nombre | lowercase}}</p-card>
+    </div>
+    <div class="col">
+        <p-card header="Titlecase"><b>Dato despues del Pipe:</b> {{nombre | titlecase}}</p-card>
+    </div>
+</div>
+
+<div class="text-layout">
+    <h1>Date | Fecha | Pipe</h1>
+    <p>Pipe para mostrar las fechas con el formato de fecha deseado</p>
+</div>
+
+<div class="grid">
+    <div class="col-5">
+        <p-card>
+            <ul>
+                <li>Fecha de hoy</li>
+                <li>Fecha de hoy | date</li>
+                <li>Fecha de hoy | date:'short'</li>
+                <li>Fecha de hoy | date:'long'</li>
+                <li>Fecha de hoy | date:'GGGG MMMM dd yyyy hh:mm a'</li>
+            </ul>
+            <hr>
+            <ul>
+                <li>Fecha de hoy | date:'long':'GMT-6'</li>
+                <li>Fecha de hoy | date:'long':'GMT-4'</li>
+                <li>Fecha de hoy | date:'long':'GMT':'en'</li>
+            </ul>
+        </p-card>
+    </div>
+    <div class="col-7">
+        <p-card>
+            <ul>
+                <li>{{fecha}}</li>
+                <li>{{fecha | date}}</li>
+                <li>{{fecha | date:'short'}}</li>
+                <li>{{fecha | date:'long'}}</li>
+                <li>{{fecha | date:'GGGG MMMM dd yyyy hh:mm a'}}</li>
+            </ul>
+            <hr>
+            <ul>
+                <li>{{fecha | date:'long':'GMT-6'}}</li>
+                <li>{{fecha | date:'long':'GMT-4'}}</li>
+                <li>{{fecha | date:'long':'GMT':'en'}}</li>
+            </ul>
+        </p-card>
+    </div>
+</div>
