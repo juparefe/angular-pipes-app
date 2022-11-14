@@ -9,10 +9,6 @@ import { PrimeNGConfig } from 'primeng/api';
 export class AppComponent {
   nombre: string = 'jUan pabLo';
 
-  mostrarNombre() {
-    console.log(this.nombre);
-  }
-
   constructor(private primengConfig: PrimeNGConfig) {}
 
   ngOnInit() {
